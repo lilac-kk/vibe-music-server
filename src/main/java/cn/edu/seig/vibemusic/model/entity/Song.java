@@ -91,4 +91,9 @@ public class Song implements Serializable {
     @TableField("release_time")
     private LocalDate releaseTime;
 
+     // ==================== 新增字段 ====================
+    @TableField(value = "rarity_id", exist = false)
+    private Long rarityId;
+}
+
 }
